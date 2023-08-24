@@ -3,7 +3,7 @@ import Button from '../components/Button'
 import { arrowRight } from '../assets/icons'
 const SpecialOffers = () => {
   return (
-    <section className="flex items-center">
+    <section className="flex items-center max-lg:flex-col">
       <div>
         <img src={offer} />
       </div>

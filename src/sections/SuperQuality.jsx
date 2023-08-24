@@ -1,25 +1,42 @@
-import Button from '../components/Button';
-import { arrowRight } from '../assets/icons';
-import {shoe8} from '../assets/images'
+import { shoe8 } from "../assets/images";
+import  Button  from "../components/Button";
 
 const SuperQuality = () => {
   return (
-    <section  className="`w-full flex flex-1">
-        <div className="flex-col">
-          <h1 className="font-montserrat text-4xl font-bold">We Provide You <span className="text-coral-red">Super<br></br> Quality</span> Shoes</h1>
-          <p className="text-slate-gray mt-3 text-xl font-montserrat leading-normal">Ensuring premium comfort and style, our meticulously<br></br> crafted footwear is designed to elevate your experience,<br></br> providing you with unmatched quality, innovation, and a<br></br> touch of elegance.</p>
-          <p className="text-slate-gray mt-5 text-xl font-montserrat leading-normal">Our dedication to detail and excellence ensures your <br></br>satisfaction</p>
-          <div className='mt-4'>
-          <Button  label='View Details' iconURL={arrowRight} />
-          </div>
+    <section
+      id='about-us'
+      className='flex justify-between items-center max-lg:flex-col gap-10 w-full max-container'
+    >
+      <div className='flex flex-1 flex-col'>
+        <h2 className='font-palanquin capitalize text-4xl lg:max-w-lg font-bold'>
+          We Provide You
+          <span className='text-coral-red'> Super </span>
+          <span className='text-coral-red'>Quality </span> Shoes
+        </h2>
+        <p className='mt-4 lg:max-w-lg info-text'>
+          Ensuring premium comfort and style, our meticulously crafted footwear
+          is designed to elevate your experience, providing you with unmatched
+          quality, innovation, and a touch of elegance.
+        </p>
+        <p className='mt-6 lg:max-w-lg info-text'>
+          Our dedication to detail and excellence ensures your satisfaction
+        </p>
+        <div className='mt-11'>
+          <Button label='View details' />
         </div>
-        <div className='ml-60'>
-          <img src={shoe8}/>
-       </div>
+      </div>
 
-        
+      <div className='flex-1 flex justify-center items-center'>
+        <img
+          src={shoe8}
+          alt='product detail'
+          width={570}
+          height={522}
+          className='object-contain'
+        />
+      </div>
     </section>
-  )
-}
+  );
+};
 
-export default SuperQuality
+export default SuperQuality;
